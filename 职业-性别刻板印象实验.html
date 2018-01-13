@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://research.millisecond.com/weicong1203/gendercareerfinal.web -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="google-site-verification" content="6WFhLzzcl_VxE2lp9lH1_VLoYrbhSbXPeXvbqfpBKbA">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, nofollow">
+	<title>
+		职业-性别刻板印象实验
+	</title>
+	<style type="text/css">
+		body {
+			font-size: 14pt;
+			color: #333333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.InstallWarning {
+			color: #6699CC;
+			font-size: 11pt;
+			font-weight: bold;
+		}
+
+		.InstallSteps {
+			font-size: 10pt;
+			padding-left: 75px;
+		}
+	</style>
+
+	<link rel="icon" href="http://www.millisecond.com/images/favicon4.ico" type="image/x-icon">
+	<script type="text/javascript" async="" src="./职业-性别刻板印象实验_files/analytics.js.下载"></script><script async="" src="./职业-性别刻板印象实验_files/gtm.js.下载"></script><script type="text/javascript" src="./职业-性别刻板印象实验_files/jquery-1.11.1.min.js.下载"></script>
+	<script type="text/javascript">
+
+		//*****************************************************************************
+		//**************** ENTER YOUR CONFIGURATION VALUES BELOW **********************
+		//*****************************************************************************
+
+		// Specify the url where your Inquisit script file is located
+		var ScriptPath = "http://scripts.millisecond.com/weicong1203/gendercareerfinal/gendercareerfinal.iqx";
+
+		// Specify your account name
+		var AccountName = "weicong1203";
+
+		// Specify true or false for the script to run in monkey mode 
+		var MonkeyMode = false;
+
+		// Specify the encryption password (if any) for the script)
+		var EncryptionKey = "";
+
+		// Specify the version of the Inquisit Web control to use
+		var Version = "4.0.10.0";
+
+		// Specify the web page to browse to if the experiment is completed successfully (specify null to stay on this page) 
+		var FinishPage = "http://www.millisecond.com/web/finish4.aspx";
+
+		//*****************************************************************************
+		//**************** ENTER YOUR CONFIGURATION VALUES ABOVE **********************
+		//*****************************************************************************
+
+
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./职业-性别刻板印象实验_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-3043509-1');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PS9XH8S');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body style="background-color: #f3f3f3" onload="onLoad()">
+	<iframe name="DownloadInquisit" title="Downloading Inquisit" height="0" width="0" style="display: none;" tabindex="-1" src="./职业-性别刻板印象实验_files/saved_resource.html">Downloading Inquisit</iframe>
+	<div id="Veil" style="display: none; position: absolute; display: none; top: 0; left: 0; cursor: not-allowed; background-color: #000000; filter: alpha(opacity=20); opacity: 0.2">
+	</div>
+	<div id="PromptFrame" style="display: none; position: absolute; border: outset 3px grey; background-color: White; vertical-align: middle; z-index: auto; filter: alpha(opacity=100); opacity: 1.0">
+
+		<script type="text/javascript">
+			function OnPromptOK()
+			{
+				PromptResult = $("#PromptText").val();
+				if ( PromptMask.test(PromptResult) == false )
+				{
+					window.alert(PromptError);
+					PromptResult = null;
+					$("#PromptText").val("");
+				}
+				else
+				{
+					hideModal("PromptFrame", "PromptText");
+					launchInquisit();
+				}
+			}
+			function OnPromptCancel()
+			{
+				PromptResult = null;
+				hideModal("PromptFrame", "PromptText");
+			}
+		</script>
+
+		<table cellpadding="5" style="position: relative; left: 5%; top: 10%; width: 90%; height: 80%">
+			<tbody><tr>
+				<td id="PromptMessage" colspan="2" style="font-size: 12pt; text-align: center">Please enter your id number.</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center">
+					<input type="text" id="PromptText" name="PromptText" value=""><br>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 50%; text-align: right;">
+					<input type="button" value="   OK   " onclick="javascript:OnPromptOK();"></td>
+				<td style="width: 50%; text-align: left;">
+					<input type="button" value="Cancel" onclick="javascript:OnPromptCancel();"></td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div id="PromptConfirmFrame" style="display: none; position: absolute; border: outset 3px grey; vertical-align: middle; background-color: White; filter: alpha(opacity=100); opacity: 1.0">
+
+		<script type="text/javascript">
+			function OnPromptConfirmOK()
+			{
+				if ( PromptResult == null )
+				{
+					PromptResult = $("#PromptConfirmText").val();
+					if ( PromptMask.test(PromptResult) == false )
+					{
+						window.alert(PromptError);
+						PromptResult = null;
+						PromptConfirmResult = null;
+						$("#PromptConfirmText").val("");
+					}
+					else
+					{
+						$("#PromptConfirmText").val("");
+						$("#PromptConfirmMessage").html(PromptConfirmMessage);
+					}
+				}
+				else
+				{
+					PromptConfirmResult = $("#PromptConfirmText").val();
+					if ( PromptResult != PromptConfirmResult )
+					{
+						window.alert(PromptMatchError);
+						PromptResult = null;
+						PromptConfirmResult = null;
+						$("#PromptConfirmText").val("");
+						$("#PromptConfirmMessage").html(PromptMessage);
+					}
+					else
+					{
+						hideModal("PromptConfirmFrame", "PromptConfirmText");
+						launchInquisit();
+					}
+				}
+			}
+			function OnPromptConfirmCancel()
+			{
+				hideModal("PromptConfirmFrame", "PromptConfirmText");
+				PromptResult = null;
+				PromptConfirmResult = null;
+			}
+		</script>
+
+		<table cellpadding="5" style="position: relative; left: 5%; top: 10%; width: 90%; height: 80%">
+			<tbody><tr>
+				<td id="PromptConfirmMessage" colspan="2" style="font-size: 12pt; text-align: center">Please enter your id number.</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center">
+					<input type="text" id="PromptConfirmText" name="PromptConfirmText" value=""><br>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 50%; text-align: right">
+					<input type="button" value="   OK   " onclick="javascript:OnPromptConfirmOK();"></td>
+				<td style="width: 50%; text-align: left">
+					<input type="button" value="Cancel" onclick="javascript:OnPromptConfirmCancel();"></td>
+			</tr>
+		</tbody></table>
+	</div>
+	<!-- Begin Consent Page -->
+
+	<script type="text/javascript">
+		function onConsent(agree)
+		{
+			$("#Veil").css("display", "none");
+			$("#ConsentPage").css("display", "none");
+			if (agree)
+			{
+				launchInquisit();
+			}
+		}
+
+		function doConsent()
+		{
+			if ( false)
+			{
+                var veilWidth = $(window).innerWidth();
+			var veilHeight = $(window).innerHeight();
+			var dlgWidth = 0.60 * veilWidth;
+			var dlgHeight = 0.80 * veilHeight;
+			var veil = $("#Veil");
+			var consentPage = $("#ConsentPage");
+
+			veil.width(veilWidth);
+			veil.height(veilHeight);
+			veil.css("display", "block");
+
+			consentPage.width(dlgWidth);
+			consentPage.height(dlgHeight);
+			consentPage.css({display: "block", top: (veilHeight / 2) - (dlgHeight / 2), left: (veilWidth / 2) - (dlgWidth / 2)});
+			$("#ConsentFrame").height("100%");
+		}
+		else
+		{
+                launchInquisit();
+		}
+
+		}
+	</script>
+	<div id="ConsentPage" style="display: none; position: absolute; border: 2px outset grey; vertical-align: middle; background-color: White; filter: alpha(opacity=100); opacity: 1.0; padding: 0px; height: 100%">
+		<table style="width: 100%; height: 100%; padding: 0px;" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td style="height: 90%">
+					<iframe id="ConsentFrame" src="./职业-性别刻板印象实验_files/saved_resource(1).html" width="100%" height="100%" style="border: 1px solid grey; margin: 0px; padding: 0px; height: 100%; width: 100%;"></iframe>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center; height: 10%">
+					<input type="button" value="I wish to proceed" onclick="javascript:onConsent(true);">
+					<input type="button" value="I do not consent" onclick="javascript:onConsent(false);">
+				</td>
+			</tr>
+
+		</tbody></table>
+	</div>
+
+
+	<!-- End Consent Page -->
+
+	<input type="hidden" name="QueryString" id="QueryString" value="">
+	<p><span id="ObjectTag"></span></p>
+	<p><span id="JavaPluginTag"></span></p>
+
+	<table cellspacing="10" cellpadding="0" style="width: 100%">
+		<tbody><tr id="MainRow" style="vertical-align: middle">
+			<td align="center" style="height: 600px">
+				<div style="border-collapse: collapse; border: solid 1px #969696; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2,OffY=2,Color=&#39;gray&#39;,Positive=&#39;true&#39;); width: 600px">
+					<table cellpadding="10" style="height: 500px; background-color: #ffffff; width: 600px;">
+						<tbody><tr style="vertical-align: bottom">
+							<td style="padding-top: 20px; text-align: center;">
+								<span style="color: #6699CC; font-size: 16pt;">
+									职业-性别刻板印象实验
+								</span>
+							</td>
+						</tr>
+						<tr style="vertical-align: top">
+							<td style="text-align: center">
+								<span style="color: #333333; font-size: 12pt;">
+									感谢参加打怪实验室的职业-性别刻板印象实验~点击下方start按钮开始~
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+						</tr>
+						<tr align="center">
+							<td>
+								<div id="InstallPanel" style="font-size: 11pt; display: block;">
+									<div id="ClickOnceInstallPanel" style="display: none;">
+									</div>
+									<div id="JavaWebStartInstallPanel" style="display: none">
+										<div class="InstallSteps" style="text-align: left;">
+											To run the Inquisit<br>
+											<p>1. Click the Start button to download the Inquisit.jnlp file.</p>
+											<p>2. If the Inquisit does not automatically launch, click the Inquisit.jnlp file from your browser's download manager.</p>
+										</div>
+									</div>
+
+									<div id="PlugInInstallPanelWindows" style="display: none; border: 1px solid #6699CC;">
+										<p class="InstallWarning">
+											This study requires the Inquisit Web Plug-in. To install the plug-in:
+										</p>
+										<div class="InstallSteps" style="padding: 0px 30px 0px 50px; text-align: left;">
+											<p>1. <a style="color: #006699;" href="javascript:install()">Download the plug-in installer</a>.</p>
+											<p>2. Click the installer in your browser's download folder. After the plug-in is installed, click the Start button that will appear on this page.</p>
+											<p>3. If you have completed the above steps but do not see the Start button, <a style="color: #006699;" href="javascript:refresh()">click here</a> to refresh the page.</p>
+										</div>
+									</div>
+									<div id="PlugInInstallPanelMac" style="display: none; border: 1px solid #6699CC;">
+										<p class="InstallWarning">
+											This study requires the Inquisit Web Plug-in. To install the plug-in:
+										</p>
+										<div class="InstallSteps" style="padding: 0px 30px 0px 50px; text-align: left;">
+											<p>1. <a style="color: #006699;" href="javascript:install()">Download the plug-in installer</a> dmg file.</p>
+											<p>2. Open the installer dmg file from your browser's download folder.</p>
+											<p>3. Run the "Install Inquisit Plugin" application in the dmg file. After the plug-in is installed, click the Start button that will appear on this page.</p>
+											<p>4. If you have completed the above steps but do not see the Start button, <a style="color: #006699;" href="javascript:refresh()">click here</a> to refresh the page.</p>
+										</div>
+									</div>
+									<div id="WebPlayerInstallPanelWindows" style="display: block; border: 1px solid rgb(102, 153, 204);">
+										<p class="InstallWarning">
+											This study requires the Inquisit Web Player. To install the player:
+										</p>
+										<div class="InstallSteps" style="padding: 0px 30px 0px 50px; text-align: left;">
+											<p>1. <a style="color: #006699;" href="javascript:install()">Download the player installer</a>.</p>
+											<p>2. Run the installer by clicking it in your browser's download folder.</p>
+											<p>3. After the player is installed, click the Start button below.</p>
+										</div>
+									</div>
+									<div id="WebPlayerInstallPanelMac" style="display: none; border: 1px solid #6699CC;">
+										<p class="InstallWarning">
+											This study requires the Inquisit Web Player. To install the player:
+										</p>
+										<div class="InstallSteps" style="padding: 0px 30px 0px 50px; text-align: left;">
+											<p>1. <a style="color: #006699;" href="javascript:install()">Download the player installer</a> dmg file.</p>
+											<p>2. Open the installer dmg file from your browser's download folder.</p>
+											<p>3. Drag the "Inquisit Web Player" application to the Applications folder.</p>
+											<p>4. After the player is installed, click the Start button.</p>
+										</div>
+									</div>
+									<div id="ActiveXInstallPanel" style="display: none; border: 1px solid #6699CC;">
+										<p class="InstallWarning">
+											This study requires the Inquisit Web Plug-in. To install the plug-in:
+										</p>
+										<div class="InstallSteps" style="padding: 0px 30px 0px 50px; text-align: left;">
+											<p>1. <a style="color: #006699;" href="javascript:install()">Download the plug-in installer</a>.</p>
+											<p>2. Run the plug-in installer. After the plug-in is installed, click the Start button that will appear on this page.</p>
+											<p>3. If you have completed the above steps but do not see the Start button, <a style="color: #006699;" href="javascript:refresh()">click here</a> to refresh the page.</p>
+										</div>
+									</div>
+									<div id="UnknownInstallPanel" style="display: none">
+										<p class="InstallWarning">
+											Unable to start because Java is not enabled in your browser. Either enable Java or try using a different browser.
+										</p>
+									</div>
+									<div id="UnsupportedInstallPanel" style="display: none">
+										<p class="InstallWarning">
+											The current operating system is not supported.
+										</p>
+									</div>
+								</div>
+								<input type="button" id="StartButton" value="Start" title="Start" onclick="javascript:doConsent();" style="width: 100px; padding: 5px; margin: 5px; display: block;">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" style="vertical-align: middle">
+								<div id="AlternateLaunchPanel" style="font-size: 11pt; font-weight: bold; color: #6699CC; display: none; width: 75%">
+									<p>Having trouble starting?</p>
+									<div id="AlternateLaunchLinks" style="font-size: 9pt; color: #000000; font-weight: normal"></div>
+								</div>
+								<noscript>
+									&lt;span style="font-size: 11pt; color: Red"&gt;This page requires a JavaScript enabled browser
+                                        to run.&lt;/span&gt;
+								</noscript>
+							</td>
+						</tr>
+						<tr>
+							<td style="vertical-align: bottom; text-align: center">
+								<a href="http://www.millisecond.com/web/participants.aspx" target="_blank" style="font-size: 8pt; color: #6699CC; text-decoration: none;">
+									<img alt="Inquisit 4" title="Powered by Inquisit by Millisecond Software" src="./职业-性别刻板印象实验_files/launchlogo_40100.png" style="border-width: 0">
+									<span style="display: block;">About the Inquisit Web App</span>
+								</a>
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+			</td>
+		</tr>
+	</tbody></table>
+	<a id="hiddenProtocolCheckLink" style="display: none;" href="http://research.millisecond.com/weicong1203/gendercareerfinal.web#">custom protocol</a>
+	<iframe id="hiddenProtocolCheckFrame" src="./职业-性别刻板印象实验_files/saved_resource(2).html" style="display: none"></iframe>
+
+	<script type="text/javascript">
+		var cVersionPath = Version.replace(/\./g, "_");
+		var cObjectTag = "<OBJECT id='InquisitControl' codebase='CODEBASEPATH' height='0' width='0' classid='CLSID:849C51EE-0271-40b4-85BE-AC986D285F8A'></OBJECT>";
+		var cEmbedTag = "<EMBED id='InquisitControl' name='InquisitControl' type='application/inquisit-web4' pluginsurl='PLUGINURL' pluginspage='PLUGINURL' width='1' height='1'></EMBED>";
+		var cPlayerProtocol = "inquisit4010";
+		var strObjectTag = "";
+		var strEmbedTag = "";
+		var InquisitControl = null;
+		var SubjectId = "";
+		var GroupId = "";
+		var PluginVersion = Version;
+		var isProtocolSupported = false;
+
+		var INSTALLMODE = {
+			None : {flag : 0, name : "None"},
+			ActiveX : {flag : 1, name : "ActiveX Control"},
+			ClickOnce : {flag : 2, name : "Click Once"},
+			MozillaPlugin : {flag : 4, name : "Mozilla Plugin"},
+			JavaWebStart : {flag : 8, name : "Java WebStart App"},
+			WebPlayer : {flag : 16, name : "Web Player"}
+		};
+
+		var EnabledInstallModesMask = 65535;
+		var SupportedInstallModes = new Array();
+		var CurrentInstallMode = INSTALLMODE.None;
+
+
+		var strInstallTimer = null;
+		var strHideStartTimer = null;
+
+		var PLATFORM = {
+			Unknown : {browser: "", os: ""},
+			Win32 : {browser: "win32", os: "win32"},
+			WOW64 : {browser: "win32", os: "win64"},
+			Win64 : {browser: "win64", os: "win64"},
+			MacOSX : {browser: "mac", os: "mac"},
+			iOS : {browser: "iOS", os: "iOS"},
+			Linux : {browser: "linux", os: "linux"},
+			Other : {browser: "", os:""}
+		};
+
+		var CurrentPlatform = PLATFORM.Unknown;
+
+		var PromptResult = null;
+		var PromptConfirmResult = null;
+		var PromptMessage = null;
+		var PromptConfirmMessage = null;
+		var PromptError = null;
+		var PromptMatchError = null;
+		var PromptMask = null;
+
+
+		function onLoad()
+		{
+			try
+			{
+				// do browser-sniffing and initialize page
+				initialize();
+
+				var detect = detectInquisit();
+        
+				// show installation instructions if necessary
+				showInstallPanel(!detect);
+
+				initializeAlternateLaunch();
+        
+				if ( !detect && isSupportedClient() ) 
+				{
+					setInstallCheckTimer();
+				}
+			}
+			catch (e)
+			{
+				window.alert(e.name + "\n" + e.message);
+			}
+		}
+
+
+		//************************************************************************
+		// ACTIONS		
+		//************************************************************************
+
+
+		function launchInquisit() 
+		{
+			try 
+			{
+				// get the subject number
+				SubjectId = GetSubjectNumber();
+				GroupId = GetGroupId();
+				if ( SubjectId == null )
+				{
+					return;
+				}
+
+				try 
+				{
+					// run the experiment!
+					notifyParticipantTracker();
+					$("#StartButton").blur();
+					run();
+				}
+				catch ( e )
+				{
+					window.alert(e.message);
+					document.getElementById("StartButton").disabled = false;
+				}
+			}
+			catch ( e )
+			{
+				window.alert(e.message);
+				return;
+			}
+		}
+
+		function run()
+		{
+			switch(getInstallMode())
+			{
+				case INSTALLMODE.ClickOnce:
+				case INSTALLMODE.JavaWebStart:
+					openInstallerWindow(getInstallPath());
+					setHideStartTimer();
+					break;
+				case INSTALLMODE.WebPlayer:
+					launchWebPlayer();
+					break;
+				default:
+					if ( isSupportedClient() == false )
+					{
+						window.alert("Client configuration unsupported.");
+						return;
+					} 
+					else
+					{
+						InquisitControl.RunScriptFile(ScriptPath, AccountName, GroupId, SubjectId, getMonkeyMode(), EncryptionKey, getFinishUrl());
+						setHideStartTimer();
+					}
+					break;
+			}
+		}
+
+		function getFinishUrl()
+		{
+			var finishUrl = FinishPage;
+			if ( finishUrl != null && finishUrl != "" )
+			{
+				var query = $("#QueryString").val();
+				if ( query != null && query != "" )
+				{
+					if ( finishUrl.indexOf("?") == -1 )
+					{
+						finishUrl += "?";        
+					}
+					else if ( finishUrl.lastIndexOf("&") != finishUrl.length - 1 )
+					{
+						finishUrl += "&";        
+					}
+            
+					finishUrl += query;
+				}
+			}
+			return finishUrl;
+		}
+
+
+		function getSetupRoot()
+		{
+			if(getInstallMode() == INSTALLMODE.JavaWebStart)
+			{
+				return "http://www.millisecond.com/download/4/";
+	}
+	return "http://inquisit.millisecond.com/4/";
+}
+
+function getInstallPath()
+{
+	switch(getInstallMode())
+	{
+		case INSTALLMODE.ActiveX:
+			return getSetupRoot() + cVersionPath + "/ax/" +getPlatform().browser + "/InquisitAx.exe";
+		case INSTALLMODE.ClickOnce:
+			return getSetupRoot() + cVersionPath + "/net/" + getPlatform().browser + "/InquisitNet.application?ScriptPath=" + encodeURIComponent(ScriptPath) + "&UserId=" + encodeURIComponent(AccountName) + "&GroupId=" + encodeURIComponent(GroupId) + "&SubjectId=" + encodeURIComponent(SubjectId) + "&MonkeyMode=" + encodeURIComponent(getMonkeyMode()) + "&EncryptionKey=" + encodeURIComponent(EncryptionKey) + "&FinishPage=" + encodeURIComponent(getFinishUrl());
+		case INSTALLMODE.JavaWebStart:
+			return getSetupRoot() + cVersionPath + "/jws/Inquisit.jnlp?ScriptPath=" + encodeURIComponent(ScriptPath) + "&UserId=" + encodeURIComponent(AccountName) + "&GroupId=" + encodeURIComponent(GroupId) + "&SubjectId=" + encodeURIComponent(SubjectId) + "&MonkeyMode=" + encodeURIComponent(getMonkeyMode()) + "&EncryptionKey=" + encodeURIComponent(EncryptionKey) + "&FinishPage=" + encodeURIComponent(getFinishUrl());
+		case INSTALLMODE.MozillaPlugin:
+			if (getPlatform() == PLATFORM.MacOSX)
+			{
+				return getSetupRoot() + PluginVersion.replace(/\./g, "_") + "/np/"  + getPlatform().browser + "/Inquisit_Plugin_" + PluginVersion.replace(/\./g, "") + ".dmg";
+			}
+			else
+			{
+				return getSetupRoot() + PluginVersion.replace(/\./g, "_") + "/np/" + getPlatform().browser + "/npInquisit.exe";
+			}
+		case INSTALLMODE.WebPlayer:
+			if (getPlatform() == PLATFORM.MacOSX)
+			{
+				return getSetupRoot() + cVersionPath + "/player/" + getPlatform().browser + "/Inquisit_Web_Player_" + Version.replace(/\./g, "") + ".dmg";
+			}
+			else
+			{
+				return getSetupRoot() + cVersionPath + "/player/" + getPlatform().os + "/IQWebPlayerSetup.exe";
+			}
+		default:
+			return document.location.href;
+	}
+}
+
+function openInstallerWindow(path)
+{
+	try
+	{
+		var frame = window.frames["DownloadInquisit"];
+		frame.open(path, "_self");
+		return frame;
+	}
+	catch(e)
+	{
+		window.location.href = path;	
+	}
+}
+
+function launchWebPlayer()
+{
+	try
+	{
+		var launchUrl = getSetupRoot() + cVersionPath + "/InquisitWebPlayer?ScriptPath=" + encodeURIComponent(ScriptPath) + "&UserId=" + encodeURIComponent(AccountName) + "&GroupId=" + encodeURIComponent(GroupId) + "&SubjectId=" + encodeURIComponent(SubjectId) + "&MonkeyMode=" + encodeURIComponent(getMonkeyMode()) + "&EncryptionKey=" + encodeURIComponent(EncryptionKey) + "&FinishPage=" + encodeURIComponent(encodeURIComponent(getFinishUrl()));
+		if (launchUrl.substring(0, 5) == "https")
+		{
+			launchUrl = cPlayerProtocol + launchUrl.substring(5);
+		}
+		else if (launchUrl.substring(0, 4) == "http")
+		{
+			launchUrl = cPlayerProtocol + launchUrl.substring(4);
+		}
+
+		if ( isChrome())
+		{
+			launchWebPlayerChrome(launchUrl);
+		}
+		else if (isEdge())
+		{
+			//will trigger onblur
+			location.href = launchUrl;
+		}
+		else if (isIE())
+		{
+			launchWebPlayerIE(launchUrl);
+		}
+		else
+		{
+			launchWebPlayerMozilla(launchUrl);
+		} 
+	}
+	catch(e)
+	{
+		window.alert(e);
+	}
+}
+
+//Handle IE
+function launchWebPlayerIE(launchUrl)
+{
+	var aLink = $('#hiddenProtocolCheckLink')[0];
+
+	isProtocolSupported = false;
+	aLink.href = launchUrl;
+
+	//IE10+
+	if (navigator.msLaunchUri)
+	{
+		navigator.msLaunchUri(launchUrl,
+                function () { isProtocolSupported = true; }, //success
+                function () { isProtocolSupported = false; }  //failure 
+        );
+		if (isProtocolSupported)
+		{
+			openInstallerWindow(launchUrl);
+		}
+		else
+		{
+			openInstallerWindow(getInstallPath());
+		}
+		return null;
+	}
+
+	//Case2: Open New Window, set iframe src, and access the location.href
+	var myWindow = window.open('', '', 'width=0,height=0');
+	myWindow.document.write("<iframe src='" + launchUrl + "></iframe>");
+	setTimeout(function ()
+	{
+		try
+		{
+			myWindow.location.href;
+			isProtocolSupported = true;
+		} catch (e)
+		{
+			//Handle Exception
+		}
+
+		if (isProtocolSupported)
+		{
+			myWindow.setTimeout('window.close()', 100);
+		} 
+		else
+		{
+			myWindow.close();
+		}
+		if (isProtocolSupported)
+		{
+			openInstallerWindow(launchUrl);
+		}
+		else
+		{
+			openInstallerWindow(getInstallPath());
+		}
+	}, 100)
+
+};
+
+//Handle Firefox
+function launchWebPlayerMozilla(launchUrl)
+{
+	var iFrame = $('#hiddenProtocolCheckFrame')[0];
+	isProtocolSupported = false;
+
+	//Set iframe.src and handle exception
+	try
+	{
+		iFrame.contentWindow.location.href = launchUrl;
+		isProtocolSupported = true;
+	} catch (e)
+	{
+		//FireFox
+		if (e.name == "NS_ERROR_UNKNOWN_PROTOCOL")
+		{
+			isProtocolSupported = false;
+			openInstallerWindow(getInstallPath());
+		}
+	}
+	return null;
+}
+
+//Handle Chrome
+function launchWebPlayerChrome(launchUrl)
+{
+	var startButton = $("#StartButton")[0];
+	startButton.focus();
+	startButton.onblur = function ()
+	{
+		isProtocolSupported = true;
+	};
+
+	//will trigger onblur
+	location.href = launchUrl;
+
+	//Note: timeout could vary as per the browser version, have a higher value
+	setTimeout(function ()
+	{
+		startButton.onblur = null;
+		if (isProtocolSupported)
+		{
+			openInstallerWindow(launchUrl);
+		}
+		else
+		{
+			openInstallerWindow(getInstallPath());
+		}
+	}, 500);
+	return null;
+}
+
+function install()
+{
+	if ( detectInquisit() )
+	{
+		refresh();
+		return;
+	}
+	openInstallerWindow(getInstallPath());
+}
+
+
+function reset()
+{
+	InquisitControl = null;
+	strObjectTag = "";
+
+	var o = $("#ObjectTag")[0];
+	while (o.hasChildNodes()) 
+	{
+		o.removeChild(o.firstChild);
+	}
+    
+	o = $("#JavaPluginTag")[0];
+	while (o.hasChildNodes()) 
+	{
+		o.removeChild(o.firstChild);
+	}
+
+	strEmbedTag = "";
+	if ( strInstallTimer )
+	{
+		window.clearInterval(strInstallTimer);
+		strInstallTimer = null;
+	}
+	PromptResult = null;
+	PromptConfirmResult = null;
+	PromptMessage = null;
+	PromptConfirmMessage = null;
+	PromptError = null;
+	PromptMatchError = null;
+	PromptMask = null;
+}
+
+function initialize()
+{
+	reset();
+	window.name = "Inquisit";
+	storeQueryString();
+	switch(getInstallMode())
+	{
+		case INSTALLMODE.ActiveX:
+			initializeActiveX();
+			break;
+		case INSTALLMODE.MozillaPlugin:
+			strEmbedTag = cEmbedTag.replace(/PLUGINURL/g, getInstallPath()); 
+			break;
+	}
+}
+
+function storeQueryString()
+{
+	var query = window.location.search.substring(1);
+	document.getElementById("QueryString").value = query;
+}
+
+function initializeInquisitControl(html)
+{
+	if ( html != "" )
+	{
+		$("#ObjectTag").html(html);
+		InquisitControl = $("#InquisitControl")[0];
+	}
+}
+
+function showInstallPanel(show)
+{
+	if ( show )
+	{
+		$("#StartButton").css("display", "none");
+		$("#InstallPanel").css("display", "block");
+
+		$("#ActiveXInstallPanel").css("display", "none");
+		$("#PlugInInstallPanelWindows").css("display", "none");
+		$("#PlugInInstallPanelMac").css("display", "none");
+		$("#ClickOnceInstallPanel").css("display", "none");
+		$("#JavaWebStartInstallPanel").css("display", "none");
+		$("#UnsupportedInstallPanel").css("display", "none");
+		$("#WebPlayerInstallPanelWindows").css("display", "none");       
+		$("#WebPlayerInstallPanelMac").css("display", "none");
+		if ( isSupportedClient() == false)
+		{
+			$("#UnsupportedInstallPanel").css("display", "block");
+			return;
+		}
+
+		switch(getInstallMode())
+		{
+			case INSTALLMODE.ActiveX:
+				$("#ActiveXInstallPanel").css("display", "block");
+				break;            
+			case INSTALLMODE.ClickOnce:
+				$("#ClickOnceInstallPanel").css("display", "block");
+				break;            
+			case INSTALLMODE.JavaWebStart:
+				$("#JavaWebStartInstallPanel").css("display", "block");
+				break;            
+			case INSTALLMODE.MozillaPlugin:
+				if (getPlatform() == PLATFORM.MacOSX )
+				{
+					$("#PlugInInstallPanelMac").css("display", "block");
+				}
+				else
+				{
+					$("#PlugInInstallPanelWindows").css("display", "block");
+				}
+				break;            
+			case INSTALLMODE.WebPlayer:
+				if (getPlatform() == PLATFORM.MacOSX )
+				{
+					$("#WebPlayerInstallPanelMac").css("display", "block");
+				}
+				else
+				{
+					$("#WebPlayerInstallPanelWindows").css("display", "block");
+				}
+				$("#StartButton").css("display", "block");
+
+				break;
+			case INSTALLMODE.Unknown:
+				$("#UnknownInstallPanel").css("display", "block");
+				break;            
+			default:
+				$("#UnsupportedInstallPanel").css("display", "block");
+				break;            
+		}
+	}
+	else
+	{
+		if ( isSupportedClient() == false)
+		{
+			$("#StartButton").css("display", "none");
+			$("#InstallPanel").css("display", "block");
+			$("#UnsupportedInstallPanel").css("display", "block");
+		}
+		else
+		{
+			$("#StartButton").css("display", "block");
+			$("#InstallPanel").css("display", "none");
+		}
+	}
+}
+
+function initializeAlternateLaunch()
+{
+	if ( SupportedInstallModes.length > 1 )
+	{
+		var links = "";
+		$("#AlternateLaunchPanel").css("display", "block");
+		for (var i = 1; i < SupportedInstallModes.length; i++)
+		{
+			links += "&#x2606; <a style='color: #6699CC;' href='javascript:launchAlternate(" + i + ");'>Try the Inquisit " + SupportedInstallModes[i].name + "</a>.<br/>";
+
+		}
+		$("#AlternateLaunchLinks").html(links);
+	}
+}
+
+function setInstallCheckTimer()
+{
+	if ( isSupportedClient() && strInstallTimer == null )
+	{
+		strInstallTimer = window.setInterval("checkInstallStatus()", 1000);
+	}
+}
+
+
+function checkInstallStatus()
+{
+	if ( detectInquisit() )
+	{
+		refresh();
+		if ( strInstallTimer )
+		{
+			window.clearInterval(strInstallTimer);
+			strInstallTimer = null;
+		}
+	}
+}
+
+function setHideStartTimer()
+{
+	if ( strHideStartTimer )
+	{
+		window.clearInterval(strHideStartTimer);
+		strHideStartTimer = null;
+	}
+	strHideStartTimer = window.setInterval("hideStartButtons()", 15000);
+}
+
+function hideStartButtons()
+{
+	$("#StartButton").css("display", "none");
+	$("#AlternateLaunchPanel").css("display", "none");
+}
+
+		
+function GetSubjectNumber()
+{
+    return "372998336";
+}
+
+
+
+
+function GetGroupId()
+{
+    return "642976854";
+}
+
+
+
+		/*****************************************************
+		UTILILTY FUNCTIONS
+		******************************************************/
+		function isChrome() {
+			return (window.chrome != null && navigator.vendor === "Google Inc." && !isEdge()) 
+		}
+
+		function isFirefox() {
+			return navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+		}
+
+		function isSafari() {
+			return (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1);
+		}
+
+		function isIE()
+		{
+			try 
+			{
+				var agent = navigator.userAgent.toLowerCase();
+				return ((agent.indexOf("msie") != -1 && agent.indexOf("opera") == -1) || agent.indexOf("trident") != -1);
+			}
+			catch (e)
+			{
+				return false;
+			}
+		}
+
+		function isEdge()
+		{
+			try 
+			{
+				return /Edge\/\d+/.test(navigator.userAgent);
+			}
+			catch (e)
+			{
+				return false;
+			}
+		}
+
+		function getPlatform()
+		{
+			if ( CurrentPlatform == PLATFORM.Unknown )
+			{
+				if (navigator.userAgent.indexOf("WOW64") != -1)
+					CurrentPlatform = PLATFORM.WOW64;
+				else if (navigator.platform.indexOf("Win64") != -1 || navigator.userAgent.indexOf("Win64") != -1)
+					CurrentPlatform = PLATFORM.Win64;
+				else if (navigator.platform.indexOf("Win32") != -1) 
+					CurrentPlatform = PLATFORM.Win32;
+				else if (navigator.platform.indexOf("Linux") != -1)
+					CurrentPlatform = PLATFORM.Linux;
+				else if (navigator.platform.indexOf("Mac") != -1 || navigator.userAgent.indexOf("Mac OS X") != -1)
+					CurrentPlatform = PLATFORM.MacOSX;
+				else if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent ))
+					CurrentPlatform = PLATFORM.iOS;
+				else
+					CurrentPlatform = PLATFORM.Other; 
+			}
+
+			return CurrentPlatform;
+		}
+
+		function isSupportedClient()
+		{
+			if ( getInstallMode() == INSTALLMODE.None )
+			{
+				return false;
+			}
+			else if (isMacOSXVersionLessThan(6))
+			{
+				return false;
+			}
+			return true;
+		}
+
+		function getInstallMode()
+		{
+			try 
+			{
+				if ( CurrentInstallMode == INSTALLMODE.None )
+				{
+					if ( SupportedInstallModes.length == 0 )
+					{
+						var os = getPlatform();
+						if ( os == PLATFORM.Win32 || os == PLATFORM.WOW64 || os == PLATFORM.Unknown || os == PLATFORM.Win64 )
+						{
+							if (isIE() || isEdge())
+							{
+								// if the activex control is installed, use it. Otherwise, check clickonce, then java, and finally fall 
+								// on installing the activex control
+								if ( EnabledInstallModesMask & INSTALLMODE.ActiveX.flag && isActiveXInstalled() )
+								{
+									SupportedInstallModes.push(INSTALLMODE.ActiveX);
+								}
+								if ( (EnabledInstallModesMask & INSTALLMODE.WebPlayer.flag) )
+								{
+									SupportedInstallModes.push(INSTALLMODE.WebPlayer);
+								}
+								if ( (EnabledInstallModesMask & INSTALLMODE.ClickOnce.flag) && isClickOnceInstalled() )
+								{
+									SupportedInstallModes.push(INSTALLMODE.ClickOnce);
+								}
+								if ( (EnabledInstallModesMask & INSTALLMODE.JavaWebStart.flag) && isJavaWebStartInstalled() )
+								{
+									SupportedInstallModes.push(INSTALLMODE.JavaWebStart);
+								}
+								if ( EnabledInstallModesMask & INSTALLMODE.ActiveX.flag && isActiveXSupported() && !isActiveXInstalled())
+								{
+									SupportedInstallModes.push(INSTALLMODE.ActiveX);
+								}
+							}
+							else
+							{
+								// if the plug-in is already installed, use it. Otherwise, check clickonce, java and then fall 
+								// back on installing the plug-in 
+								if ( (EnabledInstallModesMask & INSTALLMODE.MozillaPlugin.flag) && isPluginInstalled() && os != PLATFORM.Win64 && !isChrome() )
+								{
+									SupportedInstallModes.push(INSTALLMODE.MozillaPlugin);
+								}
+								if ( (EnabledInstallModesMask & INSTALLMODE.WebPlayer.flag) )
+								{
+									SupportedInstallModes.push(INSTALLMODE.WebPlayer);
+								}
+								if ( (EnabledInstallModesMask & INSTALLMODE.JavaWebStart.flag) && isJavaWebStartInstalled() )
+								{
+									SupportedInstallModes.push(INSTALLMODE.JavaWebStart);
+								}
+								if ( (EnabledInstallModesMask & INSTALLMODE.MozillaPlugin.flag) && !isPluginInstalled() && os != PLATFORM.Win64 && !isChrome())
+								{
+									SupportedInstallModes.push(INSTALLMODE.MozillaPlugin);
+								}
+							}
+						}
+						else if ( os == PLATFORM.MacOSX )
+						{
+							// if the plug-in is already installed, use it. Otherwise, check clickonce, java and then fall 
+							// back on installing the plug-in 
+							if ( (EnabledInstallModesMask & INSTALLMODE.MozillaPlugin.flag) && isPluginInstalled() && !isChrome())
+							{
+								SupportedInstallModes.push(INSTALLMODE.MozillaPlugin);
+							}
+							if ( (EnabledInstallModesMask & INSTALLMODE.WebPlayer.flag) )
+							{
+								SupportedInstallModes.push(INSTALLMODE.WebPlayer);
+							}
+							if ( (EnabledInstallModesMask & INSTALLMODE.JavaWebStart.flag) && isJavaWebStartInstalled() )
+							{
+								SupportedInstallModes.push(INSTALLMODE.JavaWebStart);
+							}
+							if ( (EnabledInstallModesMask & INSTALLMODE.MozillaPlugin.flag) && !isPluginInstalled() && !isChrome())
+							{
+								SupportedInstallModes.push(INSTALLMODE.MozillaPlugin);
+							}
+						}
+						else
+						{
+							SupportedInstallModes.push(INSTALLMODE.None);
+							CurrentInstallMode = SupportedInstallModes[0];
+						}
+					}
+					if ( SupportedInstallModes.length > 0 )
+					{
+						CurrentInstallMode = SupportedInstallModes[0];
+					}
+					else
+					{
+						CurrentInstallMode = INSTALLMODE.None;
+					}
+				}
+				return CurrentInstallMode;
+			}
+			catch (e)
+			{
+				window.alert(e);
+				return Unknown;
+			}
+		}
+
+		// this function used by dynamically inserted javascript
+		function GetQueryVariable(variable) 
+		{
+			var query = window.location.search;
+			if ( query == null || query.length == 0 )
+			{
+				throw new Error("Failed to get subject id. The url has no parameters.");
+			}
+
+			query = query.substring(1);
+			if ( query == null || query.length == 0 )
+			{
+				throw new Error("Failed to get subject id. The url has no parameters.");
+			}
+
+			var vars = query.split("&");
+			if ( vars.length == 0 )
+			{
+				throw new Error("Failed to get subject id. The url has no parameters.");
+			}
+
+			for (var i=0; i<vars.length; i++) 
+			{
+				var pair = vars[i].split("=");
+				if ( pair.length == 2 )
+				{
+					if (pair[0] == variable) 
+					{
+						return pair[1];
+					}
+				}
+			} 
+			throw new Error("Failed to get subject id. The url has no parameter named '" + variable + "'.");
+		}
+
+		function detectInquisit()
+		{
+			switch (getInstallMode())
+			{
+				case INSTALLMODE.ActiveX:
+					return isActiveXInstalled();
+				case INSTALLMODE.ClickOnce:
+				case INSTALLMODE.JavaWebStart:
+					return true;
+				case INSTALLMODE.WebPlayer:
+					return isWebPlayerInstalled();
+				case INSTALLMODE.MozillaPlugin:
+					// Mozilla may not recognize new plug-ins without this refresh
+					if ( isPluginInstalled() )
+					{
+						initializeInquisitControl(strEmbedTag);
+						return true;
+					}
+					return false;
+			}
+			return false;
+		}
+
+		function isActiveXInstalled()
+		{
+			return isActiveXSupported() && initializeActiveX();
+		}
+
+		function initializeActiveX()
+		{
+			if(InquisitControl == -1)
+			{
+				return false;
+			}
+			else if(InquisitControl == null)
+			{
+				var progid = "InquisitAx4.InquisitEngine." + Version;
+				try
+				{
+					InquisitControl = new ActiveXObject(progid);
+					if ( InquisitControl.constructor == null)
+					{
+						InquisitControl = -1;
+						return false;
+					}
+					return true;
+				}
+				catch ( e )
+				{
+					InquisitControl = -1;
+					return false;		
+				}
+			}
+		}
+
+		function isWebPlayerInstalled()
+		{
+			return (navigator.isProtocolHandlerRegistered != null && navigator.isProtocolHandlerRegistered(cPlayerProtocol));
+		}
+
+		function isActiveXSupported()
+		{
+			return isIE();
+		}
+
+		function isPluginInstalled()
+		{
+			navigator.plugins.refresh(false);
+			for ( var i=0; i < navigator.plugins.length; i++)
+			{
+				if ( navigator.plugins[i].name.substring(0, 12) == "Inquisit Web" )
+				{
+					var length = "Inquisit Mozilla Plugin ".length;
+					var pversion = navigator.plugins[i].description.substr(length);
+					if ( pversion[0] == Version[0] && compareVersions(pversion, Version) >= 0 )
+					{
+						PluginVersion = pversion;
+						return true;
+					}
+				}
+			}
+			return false;
+		}
+
+		function compareVersions(a, b) 
+		{
+			try
+			{
+				if (a === b) {
+					return 0;
+				}
+
+				var a_components = a.split(".");
+				var b_components = b.split(".");
+
+				var len = Math.min(a_components.length, b_components.length);
+
+				// loop while the components are equal
+				for (var i = 0; i < len; i++) {
+					// A bigger than B
+					if (parseInt(a_components[i]) > parseInt(b_components[i])) {
+						return 1;
+					}
+
+					// B bigger than A
+					if (parseInt(a_components[i]) < parseInt(b_components[i])) {
+						return -1;
+					}
+				}
+
+				// If one's a prefix of the other, the longer one is greater.
+				if (a_components.length > b_components.length) {
+					return 1;
+				}
+
+				if (a_components.length < b_components.length) {
+					return -1;
+				}
+
+				// Otherwise they are the same.
+				return 0;
+			}
+			catch(err)
+			{
+				window.alert(err+": a="+a+" and b="+b);
+				return 0;
+			}
+		}
+
+		function getJavaVersion()
+		{
+			if (navigator.mimeTypes) 
+			{
+				for( var i=0,size=navigator.mimeTypes.length; i<size; i++ )
+				{
+					// The jpi-version is the plug-in version.  This is the best version to use.
+					if( navigator.mimeTypes[i].type.match(/^application\/x-java-applet;jpi-version=(.*)$/) !== null )
+					{
+						var javaType = navigator.mimeTypes[i].type;
+						if ( javaType.indexOf("1.8") != -1 )
+						{
+							return 8;
+						}
+						if ( javaType.indexOf("1.7") != -1 )
+						{
+							return 7;
+						}
+						else if ( javaType.indexOf("1.6") != -1 )
+						{
+							return 6;
+						}
+						else if ( javaType.indexOf("1.5") != -1 )
+						{
+							return 5;
+						}
+						else if ( javaType.indexOf("1.4") != -1 )
+						{
+							return 4;
+						}
+						return 0;
+					}
+				}
+				/*if ( navigator.mimeTypes["application/x-java-applet;version=1.5"] )
+				if ( navigator.mimeTypes["application/x-java-applet;version=1.5"] || 
+				navigator.mimeTypes["application/x-java-applet;version=1.6"] ) 
+				{ 
+					return true; 
+				}*/
+			}
+		}
+
+		function isJavaWebStartInstalled()
+		{
+			var x = null;
+			if (isIE())
+			{
+				try
+				{
+					var jws = new ActiveXObject("JavaWebStart.isInstalled");
+					return true;
+				}
+				catch (e)
+				{
+				}
+				return false;
+			}
+			else
+			{
+				var minJavaVersion = 5;
+				if (getPlatform() == PLATFORM.MacOSX )
+				{
+					if ( getMacOSXVersion() >= 9 )
+					{
+						// java disabled by default security settings on OS X 10.9 (Maverick)
+						return false;
+					}
+					if ( getMacOSXVersion() >= 7 )
+					{
+						if ( isChrome() )
+						{
+							// chrome + java on 10.7 (Lion) no longer works
+							return false;
+						}
+						minJavaVersion = 7;
+					}
+				}
+				return getJavaVersion() >= minJavaVersion;
+			}
+			return false; 
+		} 
+
+		function isMacOSXVersionLessThan(minorversion)
+		{
+			if (getPlatform() == PLATFORM.MacOSX )
+			{
+				var mark = "Mac OS X 10";
+				var userAgent = navigator.userAgent;
+				var startVersion = userAgent.indexOf(mark) + mark.length + 1;
+				var endVersion = userAgent.indexOf(")", startVersion);
+				var version = userAgent.substr(startVersion, endVersion - startVersion);
+		
+				if ( endVersion == -1 || startVersion == -1)
+				{
+					return false;
+				}
+
+				var parts = version.split("_");
+				if ( parts.length < 2 ) 
+				{
+					parts = version.split(".");
+				}
+
+				if ( parts.length >= 1)
+				{
+					return (minorversion > Number(parts[0]));
+				}
+				return false;
+			}
+			return false;
+		}
+
+		function getMacOSXVersion()
+		{
+			var userAgent = navigator.userAgent;
+			if ( /Mac OS X 10_5/.test(userAgent) || /Mac OS X 10.5/.test(userAgent))
+			{
+				return 5;	
+			}
+			else if ( /Mac OS X 10_6/.test(userAgent) || /Mac OS X 10.6/.test(userAgent))
+			{
+				return 6;
+			}
+			else if ( /Mac OS X 10_7/.test(userAgent) || /Mac OS X 10.7/.test(userAgent) )
+			{
+				return 7;
+			}
+			else if ( /Mac OS X 10_8/.test(userAgent) || /Mac OS X 10.8/.test(userAgent) )
+			{
+				return 8;
+			}
+			else if ( /Mac OS X 10_9/.test(userAgent) || /Mac OS X 10.9/.test(userAgent) )
+			{
+				return 9;
+			}
+			else if ( /Mac OS X 10_10/.test(userAgent) || /Mac OS X 10.10/.test(userAgent) )
+			{
+				return 10;
+			}
+			else if ( /Mac OS X 10_11/.test(userAgent) || /Mac OS X 10.11/.test(userAgent) )
+			{
+				return 11;
+			}
+		}
+
+		function isClickOnceInstalled()
+		{
+			if ( isIE() || isEdge() )
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+            }
+		}
+
+		function hasCrlVersion(v)
+		{
+			var i = 0;
+			var a = navigator.userAgent.match(/\.NET CLR [0-9.]+/g);
+			if (a != null)
+			{
+				for (i = 0; i < a.length; ++i)
+				{
+					var crlv = getVersion(a[i]);
+					if (compareVersions(v, crlv) <= 0)
+					{
+						return true;
+					}
+				}
+			}   
+			return false;
+		}
+
+
+		function refresh()
+		{
+			window.location.href = window.location.href;
+		}
+
+
+		function getMonkeyMode()
+		{
+			if ( MonkeyMode == true )
+			{
+				return "monkey";
+			}
+			else
+			{
+				return "human";
+			}
+		}
+
+		function getVersion(v)
+		{
+			try
+			{
+				var a = v.match(/([0-9]+)\.([0-9]+)\.([0-9]+)/i);
+				return a[0];
+			}
+			catch(error)
+			{
+				window.alert(error);
+				return 0;
+			}
+		}
+
+		/*modal dialog implementation*/
+
+		function Prompt()
+		{
+			showModal("PromptFrame", "PromptText", "PromptMessage");
+		}
+
+		function PromptConfirm()
+		{
+			showModal("PromptConfirmFrame", "PromptConfirmText", "PromptConfirmMessage");
+		}
+
+		function showModal(frameid, textid, messageid)
+		{
+			var veilWidth = $(window).innerWidth();
+			var veilHeight = $(window).innerHeight();
+			var dlgWidth = 300;
+			var dlgHeight = 150;
+			var veil = $("#Veil");
+			var dlg = $("#" + frameid);
+
+			PromptResult = null;
+			PromptConfirmResult = null;
+			$("#" + textid).val("");
+			$("#" + messageid).html(PromptMessage);
+
+			veil.width(veilWidth);
+			veil.height(veilHeight);
+			veil.css("display", "block");
+
+			dlg.width(dlgWidth);
+			dlg.height(dlgHeight);
+			dlg.css({display: "block", top: (veilHeight / 2) - (dlgHeight / 2), left: (veilWidth / 2) - (dlgWidth / 2)});
+		}
+
+		function hideModal(frameid, textid)
+		{
+			$("#Veil").css("display", "none");
+			$("#" + frameid).css("display", "none");
+			$(textid).val("");
+		}
+
+		function launchAlternate(index) 
+		{
+			try
+			{
+				if ( SupportedInstallModes.length <= 1 )
+				{
+					window.alert("No alternative versions are available.");
+				}
+				else
+				{
+					CurrentInstallMode = SupportedInstallModes[index];
+            
+					while ( SupportedInstallModes[0] != CurrentInstallMode )
+					{
+						var current = SupportedInstallModes.shift();
+						SupportedInstallModes.push(current);
+					}
+            
+					$("#StartButton").val("Start (" + CurrentInstallMode.name + " version)");
+					$("#StartButton").width("200px");
+					onLoad();
+
+					if ( strHideStartTimer )
+					{
+						window.clearInterval(strHideStartTimer);
+						strHideStartTimer = null;
+					}
+				}
+			}
+			catch (e)
+			{
+				window.alert(e.name + "\n" + e.message);
+			}
+		}
+
+		function notifyParticipantTracker()
+		{
+			try
+			{
+				var query = $("#QueryString").val();
+				var trackerUrl = "http://www.millisecond.com/web/tracker.ashx" + "?ScriptPath=" + encodeURIComponent(ScriptPath) + "&Version=" + encodeURIComponent("4.0.10.0") + "&UserID=" + encodeURIComponent(AccountName) + "&GroupID=" + encodeURIComponent(GroupId) + "&SubjectID=" + encodeURIComponent(SubjectId) + "&IQClient=" + encodeURIComponent(getInstallMode().flag) + "&Query=" + encodeURIComponent(query);
+				$.ajax(
+				{
+        			url: trackerUrl,
+					type: "GET"
+				});
+			}
+			catch(e)
+			{}
+	}
+	</script>
+
+
+
+</body></html>
